@@ -1,5 +1,3 @@
-FROM python:3.11-slim
-WORKDIR /opt/flask/
-COPY . .
+FROM tecktron/python-waitress:latest
 RUN pip install flask
-CMD ["python","./wsgi.py"]
+COPY wsgi.py /app/
