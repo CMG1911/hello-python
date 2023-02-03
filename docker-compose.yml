@@ -1,0 +1,7 @@
+version: "3"
+services:
+  flask:
+   build: .
+   image: origin
+   ports:
+   - "8000:8000"
